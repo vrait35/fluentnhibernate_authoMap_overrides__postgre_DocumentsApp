@@ -1,0 +1,13 @@
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\bin\Debug\netcoreapp2.0\DosumentsApp.deps.json
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\bin\Debug\netcoreapp2.0\DosumentsApp.runtimeconfig.json
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\bin\Debug\netcoreapp2.0\DosumentsApp.runtimeconfig.dev.json
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\bin\Debug\netcoreapp2.0\DosumentsApp.dll
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\bin\Debug\netcoreapp2.0\DosumentsApp.pdb
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\obj\Debug\netcoreapp2.0\DosumentsApp.csprojResolveAssemblyReference.cache
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\obj\Debug\netcoreapp2.0\DosumentsApp.csproj.CoreCompileInputs.cache
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\obj\Debug\netcoreapp2.0\DosumentsApp.AssemblyInfoInputs.cache
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\obj\Debug\netcoreapp2.0\DosumentsApp.AssemblyInfo.cs
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\obj\Debug\netcoreapp2.0\DosumentsApp.dll
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\obj\Debug\netcoreapp2.0\DosumentsApp.pdb
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\bin\Debug\netcoreapp2.0\DbContextLibrary.dll
+C:\Users\anuar\source\repos\DosumentsApp\DosumentsApp\bin\Debug\netcoreapp2.0\DbContextLibrary.pdb

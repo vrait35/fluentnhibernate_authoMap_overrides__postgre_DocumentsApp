@@ -1,0 +1,61 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model DosumentsApp.Models.FileViewModel
+<div id="sel1" style="display:none" >
+    <select id="sel2" name="FileTypes">
+       
+        @for (int i = 0; i < @Enum.GetNames(typeof(DbContextLibrary.PostgreSql.FileTypeEnum)).Length; i++)
+        {           
+            <option value=@i>@Enum.GetNames(typeof(DbContextLibrary.PostgreSql.FileTypeEnum))[i]</option>
+        }
+    </select>
+</div>
+<form name="documentForm" id="formId"  class="form-action" asp-action="Create" asp-controller="Home" asp-antiforgery="true" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly"></div>         
+
+    <label asp-for="DocumentName"></label><br />
+    <input asp-for="DocumentName" /><br />
+
+    <label asp-for="DateTimeCreateDocument"></label><br />
+    <input asp-for="DateTimeCreateDocument" /><br />     
+
+    <input class="btn btn-dark" type="submit" value="Отправить"><br /><br />
+    <label asp-for="Files"></label><br />
+    <input type="file" asp-for="Files" class="input_file" multiple="multiple" /><br>    
+  
+</form>
+
+
+<script>
+    $(document).ready(function () {
+
+        $(".input_file").change(function () {
+
+            for (var i = 0; i < $(this).get(0).files.length; ++i) {
+
+                var input_file = document.createElement('input');
+                input_file.type = "text";
+                input_file.value = $(this).get(0).files[i].name;
+                input_file.id = "inpit_file_" + i.toString();
+                var form = document.forms["documentForm"];
+                form.appendChild(input_file);
+
+                 var sele = document.createElement('select');
+            sele.name = "FileTypes";
+            var countEnum =@Enum.GetNames(typeof(DbContextLibrary.PostgreSql.FileTypeEnum)).Length;
+
+            for (s= 0; s < countEnum;s++){
+                var op1 = document.createElement('option');
+                op1.text = $("#sel2")[0][s].innerText;
+            sele.appendChild(op1);
+            }
+            form.appendChild(sele);
+
+            var br = document.createElement('br');
+            form.appendChild(br);
+            }
+        });
+
+    });
+
+</script>
+
